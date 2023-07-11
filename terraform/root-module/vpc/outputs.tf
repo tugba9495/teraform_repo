@@ -9,6 +9,6 @@ output "public_subnet2" {
 }
 # output "aws_eip" {
   
-#   value = module.aws_eip.elastic_ip_id
+# #  value = module.aws_eip.elastic_ip_id
 # }
 
