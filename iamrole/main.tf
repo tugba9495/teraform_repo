@@ -45,8 +45,8 @@ resource "aws_iam_policy" "terraform_iam_policy" {
   })
 }
 resource "aws_iam_policy_attachment" "terraform_iam_policy_attachment" {
-  name  = "terraform_iam_policy_attachment"
-  roles = [aws_iam_role.terraform_role.id]
+  name       = "terraform_iam_policy_attachment"
+  roles      = [aws_iam_role.terraform_role.id]
   policy_arn = aws_iam_policy.terraform_iam_policy.arn
 
 }
