@@ -8,8 +8,8 @@ variable "key_name" {
   type = string
   description = "keyname for ec2 instance"
 }
-variable "vpc_id" {
-    type = string
-    default = "vpc-007d7939c6b5fe409"
+# variable "vpc_id" {
+#     type = string
+#     default = "vpc-007d7939c6b5fe409"
   
-}
+# }
