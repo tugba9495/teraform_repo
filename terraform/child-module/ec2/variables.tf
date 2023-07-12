@@ -37,6 +37,16 @@ variable "vpc_id" {
     description = "id of vpc to create ec2 instance"
   
 }
-variable "subnet_id" {
+variable "public_subnet1" {
   description = "id of the subnet to launch ec2 instance"
+  type = string
+}
+variable "eip" {
+    type = string
+  
+}
+variable "availability_zone_for_ebs" {
+    type = string
+
+  
 }

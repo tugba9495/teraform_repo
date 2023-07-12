@@ -7,8 +7,8 @@ output "public_subnet1" {
 output "public_subnet2" {
   value = module.aws_vpc.public_subnet2_id
 }
-# output "aws_eip" {
+output "aws_eip" {
   
-# #  value = module.aws_eip.elastic_ip_id
-# }
+ value = module.aws_vpc.aws_eip
+}
 

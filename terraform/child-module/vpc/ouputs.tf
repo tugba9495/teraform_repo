@@ -9,7 +9,7 @@ output "public_subnet2_id" {
   value = aws_subnet.public_subnet2.id
 }
 output "aws_eip" {
-  value = aws_eip.elastic_ip.id
+  value = aws_eip.elastic_ip.public_ip
   
 }
 

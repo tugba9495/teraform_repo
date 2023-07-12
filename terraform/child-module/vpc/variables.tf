@@ -27,3 +27,8 @@ variable "destination_cidr_block_for_public_route" {
     type = string
     description = "cidr block  for route"
 }
+variable "destination_cidr_block_for_private_route" {
+    type = string
+    description = "cidr block  for route"
+    default = "0.0.0.0/0"
+}

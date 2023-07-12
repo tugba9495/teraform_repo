@@ -6,4 +6,6 @@ module "aws_vpc" {
   private_subnet1 = "10.0.1.0/24"
   private_subnet2 = "10.0.2.0/24"
   destination_cidr_block_for_public_route = "0.0.0.0/0"
+  
 }
+

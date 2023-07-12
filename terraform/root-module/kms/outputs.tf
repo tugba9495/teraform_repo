@@ -1,3 +1,3 @@
-# output "vpc_id" {
-#   value = aws_vpc.my_vpc.id
-# }
+output "aws_kms_key" {
+    value = module.s3_kms_key.aws_kms_key
+}

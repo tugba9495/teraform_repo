@@ -7,3 +7,7 @@ output "kms_key_id" {
     description = "kms key id output"
   
 }
+output "aws_kms_key" {
+    value = aws_kms_key.kms_key_terraform.arn
+  
+}

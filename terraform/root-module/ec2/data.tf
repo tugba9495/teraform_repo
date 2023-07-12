@@ -6,28 +6,14 @@ data "terraform_remote_state" "vpc" {
   region = "us-west-1"
  }
 }
-data "terraform_remote_state" "public_subnet1" {
+
+
+data "terraform_remote_state" "kms_key" {
  backend = "s3"
  config = {
   bucket = "terraform-bucket-homework"
-  key    = "homework/vpc/terraform.tfstate"
+  key    = "s3/kms/terraform.tfstate"
   region = "us-west-1"
  }
 }
 
-data "terraform_remote_state" "public_subnet2_id" {
- backend = "s3"
- config = {
-  bucket = "terraform-bucket-homework"
-  key    = "homework/vpc/terraform.tfstate"
-  region = "us-west-1"
- }
-}
-# data "terraform_remote_state" "elastic_ip" {
-#  backend = "s3"
-#  config = {
-#   bucket = "terraform-bucket-homework"
-#   key    = "homework/vpc/terraform.tfstate"
-#   region = "us-west-1"
-#  }
-# }
